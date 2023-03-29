@@ -2,14 +2,23 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-d
 
 import ContainerPage from "./layouts/ContainerPage";
 
+import VirtualCard from "./pages/VirtualCard";
+import Generate from "./pages/Generate";
+
 export default function App() {
   return (
     <>
       <Router>
         <Routes>
-          <Route path="/:name" element={<ContainerPage>CardPage</ ContainerPage>} />
-          <Route path="/generate" element={<ContainerPage>Generate</ ContainerPage>} />
-          <Route index path="*" element={<Navigate to="/generate/" />} />
+          <Route path="/:name" element={
+            <ContainerPage>
+              <VirtualCard />
+            </ ContainerPage>} />
+          <Route path="/generate"
+            element={
+              <ContainerPage>
+                <Generate />
+              </ ContainerPage>} />
         </Routes>
       </Router>
     </>
