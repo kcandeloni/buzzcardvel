@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,500&display=swap");
 :root {
   --icon: #11c76f;
-  --Button: #238662;
+  --button: #238662;
   --backgroundMenu: #f5f5f5;
   --backgroundPage: #c3c6b9;
   --error: #ff4948;
