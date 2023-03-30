@@ -10,7 +10,7 @@ import CodeContainer from "./CodeContainer";
 
 export default function GenerateFrom() {
   const [imgQRCode, setImgQRCode] = useState(false);
-  const [loading, SetLoading] = useState(false);
+  const [loading, setLoading] = useState(false);
   const {
     register,
     handleSubmit,
@@ -27,7 +27,7 @@ export default function GenerateFrom() {
           src: `https://chart.googleapis.com/chart?chs=150x150&cht=qr&chl=${url}${nameURL}`,
           name
         });
-        SetLoading(false);
+        setLoading(false);
       })
       .catch((error) => {
         console.log(error);
@@ -35,7 +35,7 @@ export default function GenerateFrom() {
   }
 
   async function onSubmit(newCardPage) {
-    SetLoading(true);
+    setLoading(true);
     const { name, linkedinURL, gitHubURL } = newCardPage;
     const promise = postNewCardPage({
       name,
@@ -49,7 +49,7 @@ export default function GenerateFrom() {
       })
       .catch((error) => {
         console.log(error);
-        SetLoading(false);
+        setLoading(false);
       });
   }
 

@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export default function CodeContainer({ src, name }) {
 
-
   return (
     <Container>
       <p>{name}</p>

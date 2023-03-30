@@ -19,6 +19,7 @@ export default function App() {
               <ContainerPage>
                 <Generate />
               </ ContainerPage>} />
+          <Route index path="*" element={<Navigate to="/generate" />} />
         </Routes>
       </Router>
     </>
