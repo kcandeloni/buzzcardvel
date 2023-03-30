@@ -10,21 +10,22 @@ export default function PresentationContainer({
   gitHubURL,
 }) {
 
-  const { title, description, image } = MetadataPage[0];
+  const { description, image } = MetadataPage[0];
 
   return (
     <Container>
       <p>Hello, my name is {name}</p>
+      <img src={image} aria-hidden alt='user image' />
       <p className="sub-title">Aboult</p>
       <p>{description}</p>
       < Footer >
-        <a href={gitHubURL} target="_blank">
+        <a href={gitHubURL} target="_blank" rel="noreferrer">
           <Button>
             <BsGithub />
             GitHub
           </Button>
         </a>
-        <a href={linkedinURL} target="_blank">
+        <a href={linkedinURL} target="_blank" rel="noreferrer">
           <Button>
             <BsLinkedin />
             Linkedin
@@ -45,6 +46,12 @@ const Container = styled.div`
     font-weight: 700;
   }
   margin-bottom: 80px;
+  img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 1px solid var(--icon);
+  }
 `;
 
 const Footer = styled.div`
@@ -53,12 +60,13 @@ const Footer = styled.div`
   display: flex;
   align-items: center;
   div{
-    width: 150px;
-    margin: 12px;
+    width: 140px;
+    margin: 10px;
   }
   a{
     text-decoration: none;
   }
+
   @media (max-width: 600px) {
     position: fixed;
     left: 0;
