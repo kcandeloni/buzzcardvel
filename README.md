@@ -4,13 +4,13 @@
 
 ## Pré-requisitos
 
-**Docker Compose V2
+**Docker Compose V2**
 
 ### Para rodar essa aplicação:
 
-1. Faça o clone do repositório e no terminal navegue até a pasta star_clink_backend;
-2. Configure o seu arquivo ***.env*** conforme ***.env.example*** na raiz do projeto;
-3. Execute o comando `docker compose up`;
+1. Clone esse repositório para o diretório desejado.
+2. Na raiz do projeto execute o comando `docker compose up`
+3. É só isso mesmo :)
 
 
 ### URL:
