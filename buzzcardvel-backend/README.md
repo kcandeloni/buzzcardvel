@@ -44,18 +44,19 @@ GET
 POST
 
     /create
-      parâmetros: body {
-        name: string,
-        linkedinURL: string,
-        gitHubURL: string
-      }
+      parâmetros: 
+        body {
+          name: string,
+          linkedinURL: string,
+          gitHubURL: string
+        }
 
 ```
 
-### Em breve:
+### Links:
 
+Link do Deploy: Em breve...
 
-Link do Deploy:
+Link para o Projeto Front-end: https://github.com/kcandeloni/buzzcardvel-frontend
 
-
-Link para o Projeto Front-end que consumirá está linda API:
+Link para o Projeto com Docker Compose: https://github.com/kcandeloni/buzzcardvel
