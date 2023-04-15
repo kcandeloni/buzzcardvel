@@ -6,7 +6,7 @@ services:
     volumes:
       - build_react:/var/www/html
     depends_on:
-      - app_node
+      - node
 
   banco:
     image: postgres
@@ -18,9 +18,9 @@ services:
     volumes:
       - volume_banco:/var/lib/postgresql/data
 
-  app_node:
+  node:
     build: ./buzzcardvel-backend
-    container_name: app_node
+    container_name: node
     ports:
       - 5000:5000
     env_file:
