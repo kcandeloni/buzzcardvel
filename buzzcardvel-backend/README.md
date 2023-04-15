@@ -30,7 +30,7 @@
 
 
 ### URL:
- O *endpoint* do serviço estará disponível em http://localhost:4000
+ O *endpoint* do serviço estará disponível em http://localhost:5000
 
 
 ### Rotas e métodos da API : 
@@ -38,7 +38,7 @@
 ```
 GET
 
-    /:name
+    /get/:name
     /card-page/all
 
 POST
