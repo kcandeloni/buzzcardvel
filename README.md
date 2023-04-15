@@ -38,7 +38,7 @@ Rota para acessar a página de um cartão virtual com base em **name**.
 ```
 GET
 
-    /api/:name
+    /api/get/:name
     /api/card-page/all
 
 POST
@@ -51,7 +51,7 @@ POST
             gitHubURL: string
          }
       
-exemplo: http://localhost:8080/api/maria
+exemplo: http://localhost:8080/api/get/maria
 ```
 
 Links:
